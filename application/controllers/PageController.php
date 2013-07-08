@@ -2,7 +2,8 @@
 
 class PageController extends CI_Controller{
     public function index(){
-        $this->load->view("index");
+        $data['main_content'] = 'index';
+        $this->load->view('template', $data);
     }
 }
 /*
